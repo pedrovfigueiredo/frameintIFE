@@ -8,7 +8,7 @@ Project (coming soon) | [Paper (arXiv)](https://arxiv.org/abs/2209.13284)
 Code will be released upon publication.
 
 ## Supplementary Video
-[![Supplementary video link to youtube](misc/baby.gif)](https://www.youtube.com/watch?v=vEyqvn2mqnI)
+[![Supplementary video link to youtube](misc/baby.gif)](https://youtu.be/Re_c-CBlSfI)
 
 
 ## Citation
