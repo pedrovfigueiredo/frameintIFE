@@ -1,7 +1,7 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
 var INTERP_BASE = "https://homes.cs.washington.edu/~kpar/nerfies/interpolation/stacked";
-var NUM_INTERP_FRAMES = 240;
+var NUM_INTERP_FRAMES = 0;
 
 var interp_images = [];
 function preloadInterpolationImages() {
@@ -29,8 +29,8 @@ $(document).ready(function() {
 
     });
 
-    var options = {
-			slidesToScroll: 1,
+    var portoptions = {
+			slidesToScroll: 3,
 			slidesToShow: 3,
 			loop: true,
 			infinite: true,
@@ -38,22 +38,31 @@ $(document).ready(function() {
 			autoplaySpeed: 3000,
     }
 
+    var landoptions = {
+			slidesToScroll: 1,
+			slidesToShow: 2,
+			loop: true,
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 3000,
+    }
+
 		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
+    var carousels_port = bulmaCarousel.attach('.portrait-carousel', portoptions);
+    var carousels_land = bulmaCarousel.attach('.landscape-carousel', landoptions);
 
     // Loop on each carousel initialized
-    for(var i = 0; i < carousels.length; i++) {
+    for(var i = 0; i < carousels_port.length; i++) {
     	// Add listener to  event
-    	carousels[i].on('before:show', state => {
+    	carousels_port[i].on('before:show', state => {
     		console.log(state);
     	});
     }
 
-    // Access to bulmaCarousel instance of an element
-    var element = document.querySelector('#my-element');
-    if (element && element.bulmaCarousel) {
-    	// bulmaCarousel instance is available as element.bulmaCarousel
-    	element.bulmaCarousel.on('before-show', function(state) {
+    // Loop on each carousel initialized
+    for(var i = 0; i < carousels_land.length; i++) {
+    	// Add listener to  event
+    	carousels_land[i].on('before:show', state => {
     		console.log(state);
     	});
     }
@@ -65,14 +74,15 @@ $(document).ready(function() {
         player.currentTime = player.duration / 100 * this.value;
       })
     }, false);*/
-    preloadInterpolationImages();
 
-    $('#interpolation-slider').on('input', function(event) {
-      setInterpolationImage(this.value);
-    });
-    setInterpolationImage(0);
-    $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
+    // preloadInterpolationImages();
 
-    bulmaSlider.attach();
+    // $('#interpolation-slider').on('input', function(event) {
+    //   setInterpolationImage(this.value);
+    // });
+    // setInterpolationImage(0);
+    // $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
+
+    // bulmaSlider.attach();
 
 })

@@ -1,2 +1,6 @@
 .DS_store
 .idea
+**/**.pyc
+pretrained_models
+lib
+sample_data_raft_out

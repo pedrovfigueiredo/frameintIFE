@@ -155,3 +155,10 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+#header-comparison {
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}

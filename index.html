@@ -70,9 +70,19 @@
                   <span>arXiv</span>
                 </a>
               </span>
+              <!-- Supp Link. -->
+              <span class="link-block">
+                <a href="media/WACV2023_Interp_supp.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary PDF</span>
+                </a>
+              </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=vEyqvn2mqnI"
+                <a href="https://youtu.be/Re_c-CBlSfI"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -113,73 +123,103 @@
   <div class="container">
     <div class="container is-centered has-text-centered">
       <div class="hero-body">
-        <img style='height: auto; width: 80%; object-fit: contain' src="media/Teaser.png" alt="Teaser image of the paper">
+        <img style='height: auto; width: 65%; object-fit: contain' src="media/Teaser.png" alt="Teaser image of the paper">
         <h2 class="subtitle has-text-centered">
-          <span class="dnerf">FrameintIFE</span> turns pairs of images of a dynamic scene with brightness and illumination changes into convincing slow motion footage.
+          <span class="dnerf">FrameintIFE</span> interpolates challenging near-duplicate photos, creating a slow motion video that depicts the natural transition between them.
         </h2>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- <section class="hero is-light is-small">
+<section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/steve.mp4"
+    <div class="container is-centered has-text-centered">
+      <h2 class="title is-3">Comparisons</h2>
+      <table id="header-comparison">
+        <tr>
+          <td><h4>ABME</h4></td>
+          <td><h4>FILM</h4></td>
+          <td><h4><b>frameintIFE</b></h4></td>
+        </tr>
+     </table>
+      <div id="results-carousel" class="carousel results-carousel portrait-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/baby-abme.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/chair-tp.mp4"
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/baby-film.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/shiba.mp4"
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/baby.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/fullbody.mp4"
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/lamp-abme.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/blueshirt.mp4"
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/lamp-film.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/mask.mp4"
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/lamp.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/coffee.mp4"
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/lady-abme.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/toby2.mp4"
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/lady-film.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/lady.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/balcony-abme.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/balcony-film.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline width="100%">
+            <source src="media/videos/portrait/balcony.mp4"
                     type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section> -->
-
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -240,6 +280,52 @@
   </div>
 </section>
 
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-centered has-text-centered">
+      <h2 class="title is-3">Additional Examples</h2>
+      <div id="results-carousel" class="carousel results-carousel landscape-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="media/videos/landscape/tree.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="media/videos/landscape/hug.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="media/videos/landscape/hands.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="media/videos/landscape/house.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="media/videos/landscape/lakestairs.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="media/videos/landscape/lakechairs.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- <section class="section">
   <div class="container">
@@ -291,7 +377,7 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Supplementary Video</h2>
           <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/vEyqvn2mqnI" 
+            <iframe src="https://www.youtube.com/embed/Re_c-CBlSfI" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
