@@ -110,13 +110,13 @@ Note: FILM's results worsen as the image resolution increases. Therefore, when c
 
 ## Citation
 ```
-@misc{figueiredo2022frameintife,
-  doi = {10.48550/ARXIV.2209.13284},
-  url = {https://arxiv.org/abs/2209.13284},
-  author = {Figueirêdo, Pedro and Paliwal, Avinash and Kalantari, Nima Khademi},
-  title = {Frame Interpolation for Dynamic Scenes with Implicit Flow Encoding},
-  publisher = {arXiv},
-  year = {2022}
+@InProceedings{Figueiredo_2023_WACV,
+    author    = {Figueir\^edo, Pedro and Paliwal, Avinash and Kalantari, Nima Khademi},
+    title     = {Frame Interpolation for Dynamic Scenes With Implicit Flow Encoding},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2023},
+    pages     = {218-228}
 }
 ```
 
